@@ -1,0 +1,20 @@
+﻿<Window x:Class="The_Next_Car.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:The_Next_Car"
+        mc:Ignorable="d"
+        Title="The Next Car" Height="528" Width="699" >
+    <Grid Background="Black">
+        <Button x:Name="startButton" Content="STOPED" HorizontalAlignment="Left" Margin="10,403,0,0" VerticalAlignment="Top" Height="50" Width="124" Click="OnStartButtonClicked"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSE" HorizontalAlignment="Left" Margin="213,428,0,0" VerticalAlignment="Top" Height="25" Width="100" Click="OnDoorOpenButtonClicked"/>
+        <Button x:Name="LockDoorButton" Content="LOCK" HorizontalAlignment="Left" Margin="403,428,0,0" VerticalAlignment="Top" Height="25" Width="100" Click="OnLockDoorButtonClicked"/>
+        <Button x:Name="AccuButton" Content="OFF" Margin="589,428,10,0" VerticalAlignment="Top" Height="25" Click="OnAccuButtonClicked"/>
+        <Image x:Name="Gambar" Height="386" Margin="10,10,10,0" VerticalAlignment="Top" Source="/Assets/navigation.jpg"/>
+        <Label Name="Status" Content="No Power Available" HorizontalAlignment="Left" Margin="10,458,0,0" VerticalAlignment="Top" Width="124" Background="Black" Foreground="White" FontWeight="Bold"/>
+        <Label Name="DoorOpenState" Content="Door Is Open" HorizontalAlignment="Left" Margin="213,458,0,0" VerticalAlignment="Top" Width="100" Background="Black" Foreground="White" FontWeight="Bold"/>
+        <Label Name="LockOpenState" Content="Door Is Unlocked" HorizontalAlignment="Left" Margin="403,458,0,0" VerticalAlignment="Top" Width="100" Background="Black" Foreground="White" FontWeight="Bold"/>
+        <Label Name="AccuState" Content="No Power" HorizontalAlignment="Left" Margin="589,458,0,0" VerticalAlignment="Top" Width="100" Background="Black" Foreground="White" FontWeight="Bold"/>
+    </Grid>
+</Window>
